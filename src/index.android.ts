@@ -1,4 +1,4 @@
 import {bootstrapReactNativeJIT} from 'angular2-react-native/jit';
-import {HelloModule} from "./module.android";
+import {InfinityReactModule} from "./android/module";
 
-bootstrapReactNativeJIT('ngRnSeed', HelloModule);
+bootstrapReactNativeJIT('GymInfinity', InfinityReactModule);
