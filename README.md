@@ -1,6 +1,6 @@
-# angular2-react-native-seed
+# GymInfinity
 
-A seed project to create a native mobile application with Angular 2 and React Native
+A GymInfinity project to create a native mobile application with Angular 2 and React Native
 
 ## General documentation
 http://angular.github.io/react-native-renderer/
