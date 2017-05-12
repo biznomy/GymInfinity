@@ -31,7 +31,7 @@ export class DashboardGrid {
   styles: any;
   dashboard:Array<Array<{id:string,title:string,icon:string,routerLink:string}>>;
   angularLogo: string = 'http://www.liftingrevolution.com/wp-content/uploads/2016/04/how-to-master-front-squat.jpg';
-  @Input() platform:any;
+  @Input() platform:string = 'ios';
   constructor( private route: ActivatedRoute,private router: Router) {
           this.dashboard =[
             [
@@ -101,6 +101,7 @@ export class DashboardGrid {
     }
 
     onSelect(col){
+       console.log(this.router.url);
        this.router.navigate([col.routerLink],{
         queryParams: {id:col.id,title:col.title}
        });

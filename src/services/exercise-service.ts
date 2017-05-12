@@ -16,7 +16,6 @@ export class ExerciseService {
 
   private extractData(res: Response) {
     let body = res.json();
-    //console.log(JSON.stringify(body));
     return body.data || [];
   }
 

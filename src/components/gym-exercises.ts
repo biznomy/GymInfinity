@@ -29,7 +29,7 @@ export class GymExercises {
     styles:{};
     exercises:Exercise[];
     currentPage:{id:string,title:string};
-    @Input() platform:string = 'android';
+    @Input() platform:string = 'ios';
   constructor(
     private exerciseService:ExerciseService,
     private route: ActivatedRoute,
@@ -94,6 +94,7 @@ export class GymExercises {
   }
 
   onSelect(index){
+    console.log(this.router.url);
     this.router.navigate(['exercise-detail'],{
         queryParams: {id:this.currentPage.id,index:index,title:this.currentPage.title}
     });

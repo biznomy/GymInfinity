@@ -3,6 +3,7 @@ import {Dimensions} from 'react-native';
 import {ExerciseService} from '../services/exercise-service';
 import {Exercise} from '../models/exercise';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import {LocationStrategy} from '@angular/common';
 
 //showsHorizontalScrollIndicator="false"
 @Component({
@@ -31,11 +32,11 @@ export class ExerciseDetail {
   styles:{};
   exercises:Exercise[];
   exercise:Exercise;
-  @Input() platform:string = 'android';
+  @Input() platform:string = 'ios';
   
   constructor(private exerciseService:ExerciseService,
      private route: ActivatedRoute,
-     private router: Router
+     private router: Router,private _locationStrategy:LocationStrategy
     ) {
       this.exerciseService = exerciseService;
       this.exercise = {
@@ -99,6 +100,10 @@ export class ExerciseDetail {
 
       queryParams.unsubscribe();
 
+  }
+
+  ngOnDestroy(){
+    this._locationStrategy.back();
   }
 
 }
