@@ -1,8 +1,9 @@
 import {Component,Input} from '@angular/core';
-import {StyleSheet} from 'react-native';
+import {StyleSheet,Alert} from 'react-native';
 import {ExerciseService} from '../services/exercise-service';
 import {Exercise} from '../models/exercise';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import {LocalStore} from '../localstorage/store';
 
 @Component({
   selector: 'gym-exercises',
@@ -74,13 +75,19 @@ export class GymExercises {
   getExercises(){
       var self = this;
       self.loading = true;
-      this.exerciseService.getExercises(self.currentPage.id).subscribe(exercises => {
-          self.exercises = exercises;
-          self.loading = false;
-      },error => {
-          console.log(error);
-          self.loading = false;
-      });
+      try{
+        this.exerciseService.getExercises(self.currentPage.id).subscribe(exercises => {
+            self.exercises = exercises;
+            self.loading = false;
+        },error => {
+            self.loading = false;
+            self.exercises = LocalStore[self.currentPage.id];
+        });
+      }catch(err){
+         self.exercises = LocalStore[self.currentPage.id];
+         self.loading = false;
+      }
+
   }
 
   ngOnInit() {

@@ -1,7 +1,7 @@
 import {Component,Input} from '@angular/core';
 import {AsyncStorage,Dimensions} from 'react-native';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import {Location} from '@angular/common';
+import {Location,LocationStrategy} from '@angular/common';
 
 @Component({
   selector: 'stat-form',
@@ -74,7 +74,8 @@ export class StatForm {
 
   @Input() platform:string = 'android';
   constructor(private route: ActivatedRoute,
-    private router: Router,private _location: Location) {
+    private router: Router,private _location: Location,
+    private _locationStrategy:LocationStrategy) {
       const window = Dimensions.get('window');
       this.stat = {weight:'',notes:'',date:new Date(),exercise:this.exercises[0].value};
       this.styles = {
@@ -105,7 +106,7 @@ export class StatForm {
             container:{width: 230,flexDirection:'row'},
             picker:{width: 100,height:45,marginLeft:78},
             switch:{width: 80,height:50,marginLeft:70,marginTop:4},
-            input:{height:30,borderColor:'gray', borderWidth:1},
+            input:{height:30,padding:5,borderColor:'gray', borderWidth:1,fontSize:15},
             description:{fontSize:13,color:'#6c7b7a',padding:4},
             withShadow: {
                 shadowColor: "#6c7b7a",shadowOpacity: 0.5, shadowRadius: 1,
@@ -164,6 +165,10 @@ export class StatForm {
          self._location.back();
        });
      });
+  }
+
+  ngOnDestroy(){
+    this._locationStrategy.back();
   }
  
 }

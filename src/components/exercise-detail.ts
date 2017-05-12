@@ -4,6 +4,7 @@ import {ExerciseService} from '../services/exercise-service';
 import {Exercise} from '../models/exercise';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import {LocationStrategy} from '@angular/common';
+import {LocalStore} from '../localstorage/store';
 
 //showsHorizontalScrollIndicator="false"
 @Component({
@@ -47,19 +48,25 @@ export class ExerciseDetail {
   }
 
   getExercises(id,index){
-    index = index?index:0;
-    var self = this;
-    self.loading = true;
-    this.exerciseService.getExercises(id).subscribe(
-        exercises => {
+      index = index?index:0;
+      var self = this;
+      self.loading = true;
+
+      try{
+        this.exerciseService.getExercises(id).subscribe(exercises => {
             self.exercises = exercises;
-            self.exercise = exercises[index];           
+            self.exercise = self.exercises[index]; 
             self.loading = false;
-        },
-        error => {
-          console.log(error);
-          self.loading = false;
+        },error => {
+            self.loading = false;
+            self.exercises = LocalStore[id];
+            self.exercise = self.exercises[index]; 
         });
+      }catch(err){
+        self.exercises = LocalStore[id];
+        self.exercise = self.exercises[index]; 
+        self.loading = false;
+      }
   }
 
   ngOnInit() {

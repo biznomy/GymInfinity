@@ -101,7 +101,6 @@ export class DashboardGrid {
     }
 
     onSelect(col){
-       console.log(this.router.url);
        this.router.navigate([col.routerLink],{
         queryParams: {id:col.id,title:col.title}
        });
