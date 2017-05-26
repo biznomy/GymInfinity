@@ -28,6 +28,12 @@
 
 ## Screenshot for GymInfinity Overview
 
-<img src=".screenshot/android/home.png"><img src=".screenshot/ios/home.png">
+<img src="screenshot/android/home.png" width="400"><img src="screenshot/ios/home.png"  width="400">
+<img src="screenshot/android/chest-list.png" width="400"><img src="screenshot/ios/chest-list.png"  width="400">
+<img src="screenshot/android/chest-detail.png" width="400"><img src="screenshot/ios/chest-detail.png"  width="400">
+<img src="screenshot/android/tricep-list.png" width="400"><img src="screenshot/ios/tricep-list.png"  width="400">
+<img src="screenshot/android/tricep-detail.png" width="400"><img src="screenshot/ios/stats-list"  width="400">
+<img src="screenshot/android/Screenshot_1495786966.png" width="400"><img src="screenshot/ios/Screen Shot 2017-05-26 at 1.29.37 PM.png"  width="400">
+
 
 For more documentation [click here react-native-renderer](http://angular.github.io/react-native-renderer)
