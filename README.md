@@ -27,7 +27,7 @@
 ```
 
 ## Screenshot for GymInfinity Overview
-
+##                  Android                                           IOS
 <img src="screenshot/android/home.png" width="400"> &nbsp; <img src="screenshot/ios/home.png"  width="400">
 
 <img src="screenshot/android/chest-list.png" width="400"> &nbsp; <img src="screenshot/ios/chest-list.png"  width="400">
