@@ -26,5 +26,8 @@
   
 ```
 
+## Screenshot for GymInfinity Overview
+
+<img src=".screenshot/android/home.png"><img src=".screenshot/ios/home.png">
 
 For more documentation [click here react-native-renderer](http://angular.github.io/react-native-renderer)
