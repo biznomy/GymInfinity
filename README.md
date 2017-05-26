@@ -36,7 +36,7 @@
 
 <img src="screenshot/android/tricep-list.png" width="400"> &nbsp; <img src="screenshot/ios/tricep-list.png"  width="400">
 
-<img src="screenshot/android/tricep-detail.png" width="400"> &nbsp; <img src="screenshot/ios/stats-list"  width="400">
+<img src="screenshot/android/tricep-detail.png" width="400"> &nbsp; <img src="screenshot/ios/stats-list.png"  width="400">
 
 <img src="screenshot/android/Screenshot_1495786966.png" width="400"> &nbsp;<img src="screenshot/ios/Screen Shot 2017-05-26 at 1.29.37 PM.png"  width="400">
 
