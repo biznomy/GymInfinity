@@ -26,8 +26,12 @@
   
 ```
 
+For more documentation [click here react-native-renderer](http://angular.github.io/react-native-renderer)
+
+
+
 ## Screenshot for GymInfinity Overview
-##    Android App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IOS App
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Android App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IOS App
 <img src="screenshot/android/home.png" width="400"> &nbsp; <img src="screenshot/ios/home.png"  width="400">
 
 <img src="screenshot/android/chest-list.png" width="400" > &nbsp; <img src="screenshot/ios/chest-list.png"  width="400">
@@ -40,5 +44,3 @@
 
 <img src="screenshot/android/Screenshot_1495786966.png" width="400"> &nbsp;<img src="screenshot/ios/Screen Shot 2017-05-26 at 1.29.37 PM.png"  width="400">
 
-
-For more documentation [click here react-native-renderer](http://angular.github.io/react-native-renderer)
