@@ -27,10 +27,10 @@
 ```
 
 ## Screenshot for GymInfinity Overview
-##    Android  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IOS
-<img src="screenshot/android/home.png" width="400" alt="Android App"> &nbsp; <img src="screenshot/ios/home.png"  width="400">
+##    Android App &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IOS App
+<img src="screenshot/android/home.png" width="400"> &nbsp; <img src="screenshot/ios/home.png"  width="400">
 
-<img src="screenshot/android/chest-list.png" width="400" alt="Android App"> &nbsp; <img src="screenshot/ios/chest-list.png"  width="400">
+<img src="screenshot/android/chest-list.png" width="400" > &nbsp; <img src="screenshot/ios/chest-list.png"  width="400">
 
 <img src="screenshot/android/chest-detail.png" width="400"> &nbsp; <img src="screenshot/ios/chest-detail.png"  width="400">
 
